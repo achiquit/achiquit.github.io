@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/lightgallery.min.css">    
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/swiper.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+    
+  <link rel="icon" href="favicon.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YJWM5NM3W"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7YJWM5NM3W');
+  </script>
+
+</head>
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+
+
+
+    <header class="site-navbar py-3" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2" data-aos="fade-down">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Andre Chiquito</a></h1>
+          </div>
+          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="has-children">
+                  <a href="gallery.html">Gallery</a>
+                  <ul class="dropdown">
+                    <li><a href="black-and-white.html">Black and White</a></li>
+                    <li><a href="color.html">Color</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                    <li><a href="nude.html">Nude</a></li>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="figurines.html">Figurines</a></li>
+                    <li class="has-children">
+                      <a href="collections.html">Collections/Projects</a>
+                      <ul class="dropdown">
+                        <li><a href="milk.html">Milk Tags</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="adventures.html">Adventures</a>
+                  <ul class="dropdown">
+                    <li class="has-children">
+                      <a href="#">2021</a>
+                      <ul class="dropdown">
+                        <li><a href="blog-henry-traverse.html">Mount Henry Traverse</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+            <div class="d-none d-xl-inline-block">
+              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+                <li>
+                  <a href="https://www.facebook.com/andre.chiquito/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="https://www.mountainproject.com/user/200492669/andre-chiquito" class="pl-3 pr-3"><span class="icon-area-chart"></span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+
+
+    <div class="site-section"  data-aos="fade">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-7">
+            <div class="row mb-5">
+              <div class="col-12 ">
+                <h2 class="site-section-heading text-center">Full Gallery</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row" id="lightgallery">
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/01-large.png" data-sub-html="<h4>Neon Canyon</h4><p>Taken in Neon Canyon, Southeast Utah. It is a technical canyon requiring several rappells.</p>">
+            <a href="#"><img src="images/01-small.png" alt="neon-canyon" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/02-large.png" data-sub-html="<h4>Mount Henry</h4><p>Taken from the ridge just west of Mount Henry on a 15 mile round trip hike to summit Mount Henry in early June, 2021.</p>">
+            <a href="#"><img src="images/02-small.png" alt="henry-traverse" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/03-large.png" data-sub-html="<h4>Baker Canyon</h4><p>Taken in Baker Canyon, Southeast Utah. It is a technical canyon requiring several rappells.</p>">
+            <a href="#"><img src="images/03-small.png" alt="baker-nude" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/04-large.png" data-sub-html="<h4>South Six Shooter</h4><p>Bad weather rolling in towards South Six Shooter, a desert tower in Indian Creek, UT.</p>">
+            <a href="#"><img src="images/04-small.png" alt="south-six-shooter" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/05-large.png" data-sub-html="<h4>Shadowy Hands</h4><p>Taken with the aim of accentuating the models skin and contours by creating deep shadows from a singnle point of light.</p>">
+            <a href="#"><img src="images/05-small.png" alt="shadowy-hands" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/06-large.png" data-sub-html="<h4>Aerial Silks Wrap</h4><p>Taken during Centerfest in Durham, NC. An aerialist is performing a wrap, and will soon excecute a drop.</p>">
+            <a href="#"><img src="images/06-small.png" alt="aerial-silks-wrap" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/07-large.png" data-sub-html="<h4>Danbo</h4><p>A Danbo figurine peering outside.</p>">
+            <a href="#"><img src="images/07-small.png" alt="danbo" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/08-large.png" data-sub-html="<h4>Stormtrooper</h4><p>An adventurous stormtrooper viewing an overlook while grasping his walking-stick.</p>">
+            <a href="#"><img src="images/08-small.png" alt="stormtrooper" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/09-large.png" data-sub-html="<h4>Meditation House</h4><p>A meditation house in Duke Gardens, Durham, NC.</p>">
+            <a href="#"><img src="images/09-small.png" alt="meditation-house" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/10-large.png" data-sub-html="<h4>Mooshroom</h4><p>A mooshroom quietly existing in a vibrant world.</p>">
+            <a href="#"><img src="images/10-small.png" alt="mooshroom" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/11-large.png" data-sub-html="<h4>Baker Canyon Formation</h4><p>A formation that resembles an eye in West Baker Canyon, Southeast Utah.</p>">
+            <a href="#"><img src="images/11-small.png" alt="baker-eye" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/12-large.png" data-sub-html="<h4>Three Dots</h4><p>Three glass beads reflecting a human form.</p>">
+            <a href="#"><img src="images/12-small.png" alt="three-dots" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/13-large.png" data-sub-html="<h4>Durham Bus Station</h4><p>A tilt shift photo of the bus station in Durham, North Carolina.</p>">
+            <a href="#"><img src="images/13-small.png" alt="durham-bus-station" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/14-large.png" data-sub-html="<h4>Teer Quarry Sunrise</h4><p>Sunrise at Teer Quarry in Durham, NC. Teer Quarry has been abandoned and slowly filling up with water since the ~1980s.</p>">
+            <a href="#"><img src="images/14-small.png" alt="teer-quarry-sunrise" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/15-large.png" data-sub-html="<h4>Stephen's Gap Rappel</h4><p>A 140ft free hanging rappel in Stephen's Gap cave in Alabama.</p>">
+            <a href="#"><img src="images/15-small.png" alt="stephens-gap-rappel" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/16-large.png" data-sub-html="<h4>13 Bolt View</h4><p>The view after completing a 130ft 5.10- sport climb near Gunnison, CO.</p>">
+            <a href="#"><img src="images/16-small.png" alt="13-bolt-view" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/17-large.png" data-sub-html="<h4>Boneyard Beach 1</h4><p>A model contrasted with a weathered tree at Boneyard Beach on Bull Island, near Charleston, SC.</p>">
+            <a href="#"><img src="images/17-small.png" alt="boneyard-beach-1" class="img-fluid"></a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/big-images/18-large.png" data-sub-html="<h4>Boneyard Beach 2</h4><p>A model contrasted with a weathered tree at Boneyard Beach on Bull Island, near Charleston, SC.</p>">
+            <a href="#"><img src="images/18-small.png" alt="boneyard-beach-2" class="img-fluid"></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer py-4">
+      <div class="container-fluid text-center">
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+
+    
+
+    
+    
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/lightgallery-all.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+
+  <script src="js/main.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
+  </script>
+
+</body>
+</html>
