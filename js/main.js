@@ -86,8 +86,9 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
-	}; 
-	siteMenuClone();
+	};
+	// Load the header HTML before cloning the site menu
+	$("#header").load("header.html", siteMenuClone);
 
 
 	var sitePlusMinus = function() {
