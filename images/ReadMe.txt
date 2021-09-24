@@ -18,3 +18,6 @@ Blog Images:
 
 Notes:
 	Maximum of 12 photos in any category
+	To edit with a full view, use the following commands
+		cd Documents/GitHub/achiquit.github.io
+		python -m SimpleHTTPServer
