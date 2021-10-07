@@ -21,3 +21,4 @@ Notes:
 	To edit with a full view, use the following commands
 		cd Documents/GitHub/achiquit.github.io
 		python -m SimpleHTTPServer
+	*This is a mass email, if you'd like to unsubscribe just respond with your 			favorite animal.
