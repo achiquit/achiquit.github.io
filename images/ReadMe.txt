@@ -1,5 +1,5 @@
 Tile Images:
-	Dimensions: 772 x 750 
+	Dimensions: 772 x 772 (or 772 x 750, but we're trying 772 x 772 right now)
 
 Images Inside Gallery Folders:
 	Small:
