@@ -16,6 +16,9 @@ Blog Images:
 	Portrait:
 		Dimensions: 375 x XXX
 
+To Crop from Windows:
+https://bulkimagecrop.com/
+
 Notes:
 	Maximum of 12 photos in any category
 	To edit with a full view, use the following commands
