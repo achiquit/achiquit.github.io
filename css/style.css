@@ -12,6 +12,8 @@
 
 .blog-img {
     border-style:solid;
+    margin-left:auto;
+    margin-right:auto;
     width:75%;
 }
 
@@ -1255,18 +1257,19 @@ a {
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01); }
 
+/* Just an experiment.... All the comment things with no indents are mine. DEFINITELY leave this commented out. This only applies to bare images like blog or images inside the gallery, not tiles of any kind. Removing this makes blog images and images in the gallery full color by default. Fucking perfect. 
 img {
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-  filter: gray;
+/*  filter: gray;
   /* IE5+ */
-  -webkit-filter: grayscale(1);
+/*  -webkit-filter: grayscale(1);
   /* Webkit Nightlies & Chrome Canary */
-  -webkit-transition: all .1s ease-in-out; }
+/*  -webkit-transition: all .1s ease-in-out; }
   img:hover {
     filter: none;
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01); }
-
+*/
   #HCB_comment_box #hcb_form_content,
   #HCB_comment_box #hcb_form_email,
   #HCB_comment_box #hcb_form_name,
