@@ -5,9 +5,21 @@
 
 .blog-post {
   text-align: justify;
-  text-justify:inter-word;
+  text-justify: inter-word;
   -moz-text-align-last: center;
   text-align-last: center;
+}
+
+.about-tile-text {
+    text-align: justify;
+    text-justify: inter-word;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.about-tile-title {
+    text-align: center;
+    color: #2fc898;
 }
 
 /* Add drop-shadow to text in tiles */
