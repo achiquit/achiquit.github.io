@@ -15,6 +15,11 @@
     text-shadow: 2px 2px 4px black;
 }
 
+/* Add drop-shadow to text inside tile buttons */
+.px-4 {
+    text-shadow: 1px 1px 1px black;
+}
+
 /* Creating mobile view only text */
 @media only screen and (min-width:768.1px){
     .mobile-only {
@@ -1168,6 +1173,7 @@ a {
       content: ""; }
 
 .btn-outline-white {
+  box-shadow: 2px 2px 5px black;
   border-color: #fff;
   color: #fff;
   border-width: 2px;
