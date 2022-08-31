@@ -10,6 +10,11 @@
   text-align-last: center;
 }
 
+/* Add drop-shadow to text in tiles */
+.mb-3 {
+    text-shadow: 2px 2px 4px black;
+}
+
 /* Creating mobile view only text */
 @media only screen and (min-width:768.1px){
     .mobile-only {
