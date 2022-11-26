@@ -3,7 +3,7 @@
     padding-top:15px;
 }
 
-.blog-post {
+.blog-post p{
   text-align: justify;
   text-justify: inter-word;
   -moz-text-align-last: center;
@@ -42,13 +42,18 @@
     }
 }
 
-.blog-img {
+.blog-img img {
     border-style:inset;
     margin-left:auto;
     margin-right:auto;
     display:inline-block;
     max-width:75%;
     width:75%;
+}
+
+.blog-img div {
+    border-style:double;
+    padding-bottom: 15px;
 }
 
 /* Base */
