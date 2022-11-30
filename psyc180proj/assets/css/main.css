@@ -19,9 +19,17 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
-  --color-secondary: #37373f;
+  --color-primary: #75a5b4;
+  --color-secondary: #438397;
 }
+
+/*
+:root {
+    --color-default: #75a5b4;
+    --color-primary: #eefaf7;
+    --color-secondary: #468194;
+}
+*/
 
 /* Smooth scroll behavior */
 :root {
@@ -40,6 +48,21 @@
     text-align: justify;
 }
 
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%
+}
+
+.column img {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -54,7 +77,7 @@ a {
 }
 
 a:hover {
-  color: #ec2727;
+  color: #47d0fb;
   text-decoration: none;
 }
 
@@ -189,7 +212,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ec2727;
+  background: #47d0fb;
   color: #fff;
 }
 
@@ -325,7 +348,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
-  background: rgba(206, 18, 18, 0.8);
+  background: #47d0fb;
 }
 
 section {
@@ -1583,12 +1606,12 @@ section {
   transition: 0.5s;
   color: #fff;
   background: var(--color-primary);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+  box-shadow: 0 8px 28px #3f7384;
 }
 
 .home .btn-book-a-table:hover {
-  background: rgba(206, 18, 18, 0.8);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+  background: #47d0fb;
+  box-shadow: 0 8px 28px #3f7384;
 }
 
 .home .btn-watch-video {
@@ -1612,7 +1635,7 @@ section {
 }
 
 .home .btn-watch-video:hover i {
-  color: rgba(206, 18, 18, 0.8);
+  color: #3f7384;
 }
 
 @media (max-width: 640px) {
