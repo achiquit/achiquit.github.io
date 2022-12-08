@@ -3,7 +3,7 @@
     padding-top:15px;
 }
 
-.blog-post p{
+.blog-post p {
   text-align: justify;
   text-justify: inter-word;
   -moz-text-align-last: center;
@@ -20,6 +20,121 @@
 .about-tile-title {
     text-align: center;
     color: #2fc898;
+}
+
+/* Resume section */
+.resume-title h3 {
+    text-align: center;
+}
+
+.resume-title h5 {
+    text-align: center;
+}
+
+.resume-title p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768.1px) {
+    /* Desktop only */
+    .resume-title {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 50%
+    }
+}
+
+/* Resume Employment */
+.employment h5 {
+    color: #20c997;
+}
+
+.employment h2 {
+    color: white;
+}
+
+@media only screen and (max-width:768px){
+    /* Mobile only */
+    .employment h2 {
+        text-align: center;
+    }
+}
+
+/* Resume Accomplishments */
+.accomplishments h2 {
+    color: white;
+}
+
+.accomplishments h6 {
+    border-top: -4px;
+}
+
+@media only screen and (max-width:768px) {
+    .accomplishments h2 {
+        text-align: center;
+    }
+}
+
+/* Resume Education */
+.education h2 {
+    color: white;
+}
+
+.education h5 {
+    color: #20c997
+}
+
+.education h6 {
+    text-align-last: left;
+}
+
+@media only screen and (max-width:768px) {
+    /* Mobile only */
+    .education h2{
+        text-align: center;
+    }
+}
+
+/* Resume Testimonials */
+.testimonials h2 {
+    color: white;
+}
+
+.testimonials h5 {
+    color: white;
+}
+
+.testimonials p {
+    text-align: left;
+    text-align-last: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonials {
+        text-align: center;
+    }
+    
+    .testimonials p {
+        text-align: center;
+        text-align-last: center;
+    }
+}
+
+@media only screen and (max-width:768px){
+    /* Mobile only */
+    .resume-hero {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background-color: black;
+        z-index: 100;
+        box-shadow: 0 10px 20px black;
+    }
+    
+    .resume-title {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 }
 
 /* Add drop-shadow to text in tiles */
@@ -55,6 +170,8 @@
     border-style:double;
     padding-bottom: 15px;
 }
+
+/* End my shitey additions */
 
 /* Base */
 body {
