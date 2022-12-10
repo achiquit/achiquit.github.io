@@ -114,6 +114,19 @@
     }
 }
 
+/* Resume References */
+.references span {
+    color: #20c997;
+}
+
+.references h2 {
+    color: white;
+}
+
+.references h5 {
+    color: #20c997;
+}
+
 /* Resume Testimonials */
 .testimonials h2 {
     color: white;
