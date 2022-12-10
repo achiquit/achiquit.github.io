@@ -1,4 +1,9 @@
 /* My shitey additions */
+.smooth-scroll {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 .after-img {
     padding-top:15px;
 }
@@ -33,6 +38,20 @@
 
 .resume-title p {
     text-align: center;
+}
+
+.resume-title hr {
+    width: 50%;
+    background-color:#ffffff;
+}
+
+.resume-body span {
+    color: white;
+}
+
+.resume-body hr {
+    width: 90%;
+    background-color: #ffffff;
 }
 
 @media only screen and (min-width: 768.1px) {
@@ -117,6 +136,12 @@
     .testimonials p {
         text-align: center;
         text-align-last: center;
+    }
+}
+
+testimonials:focus {
+    .testimonials-link {
+        text-decoration: underline;
     }
 }
 
