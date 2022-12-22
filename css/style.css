@@ -27,6 +27,12 @@
     color: #2fc898;
 }
 
+.blog-sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+}
+
 /* Resume section */
 .resume-title h3 {
     text-align: center;
