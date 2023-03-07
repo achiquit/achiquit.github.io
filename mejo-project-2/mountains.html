@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the blurb of text below the name of the website in search results.">
+        <title>The Blue Ghost Fireflies</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="icon" href="img/note.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!--this is a comment. all visible content must go inside the body-->
+    <body>
+        <header>
+            <nav>
+                <i onclick="openNav()" class="burger fa fa-bars fa-2x"></i>
+                <div class="desktop-menu">
+                    <a class="menu-item" href="mountains.html">Mountains</a>
+                    <a class="menu-item" href="piedmont.html">Piedmont</a>
+                    <a class="menu-item" href="index.html"><u>Home</u></a>
+                    <a class="menu-item" href="coastal-plain.html">Inner Coastal Plain</a>
+                    <a class="menu-item" href="tidewater.html">Tidewater</a>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="mountains.html">Mountains</a>
+          <a href="piedmont.html">Piedmont</a>
+          <a href="coastal-plain.html">Inner Coastal Plain</a>
+          <a href="tidewater.html">Tidewater</a>
+        </div>
+
+        <div class="title-area" id="mountains-title">
+            <h1>The Blue Ghost Fireflies</h1>
+            <div class="content-gradient"></div>
+        </div>
+        
+        <div class="body-content">
+            <p>No matter how delightful and wondrous a flying, twinkling creature may be, the southeastern United States is rife with lightning bugs (or fireflies, depending on your dialectic predilections). But ranking high among the family’s black sheep is the Phausis reticulata, more commonly known as the blue ghost firefly.<br>These insects differentiate themselves from other lightning bugs in ways myriad. Females are flightless, and are a pale yellow or white in color. Also, rather than flash, they glow.</p>
+            <div class="polaroid">
+                <div class="polaroid-image">
+                    <img src="img/comparison.jpg" alt="A side by side comparison between the blue ghost firefly and the larger, common yellow variety.">
+                </div>
+                <div class="image-text">
+                    <p>The smaller blue ghost firefly compared with the common yellow variety.</p>
+                </div>
+            </div>            
+            <p>Sure, the difference between “flashing” and “glowing” can seem like splitting hairs until it’s witnessed; these blue ghosts regularly streak through the sky, fully ablaze for up to a minute at a time. Moreover, instead of the expected whiteish color, the light they emit is an eerie blue-green shade that’s notoriously difficult to photograph. The season for spotting the blue ghosts is so difficult because they only appear for about a month each summer.<br>This makes studying their life cycles and habits particularly tricky for scientists. We do know their habitat is shrinking—from expanses ranging all the way to Arkansas in 1825—and they’re now relegated to the few pristine Appalachian forests left with spongy leaf bottoms and stream beds nearby, especially Dupont State Forest and its surrounding wild stretches. Mid-May through mid-June is prime viewing time, and they come out late—after sunset, not during.<br>The blue fireflies also have a local legend attached to them. Some say that the glowing blue fireflies are the ghosts of Confederate soldiers (though being blue, it would make more sense if they were the ghosts of Union soldiers).<br>Patience is about the only tool necessary for viewing. Staring into the darkness and believing that it’s only a matter of time will go a long way to seeing something truly rare, and nearly impossible to capture on film. Just put yourself in the right place and wait for the magic to arrive.<br><br>– Originally published in <a href="https://www.atlasobscura.com/places/blue-ghost-fireflies" target="_blank">Atlas Obscura</a>. Reused for educational purposes.</p>
+            <p class="subscript">Location: DuPont State Forest near Hendersonville, NC</p>
+            <div class="multiple-tiles">
+                
+                <div class="polaroid iframe-tile">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d460882.90099489543!2d-82.74242978155061!3d35.343958941086605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859b9b2f3e15f59%3A0x6482f1cdec54376c!2sDuPont%20State%20Recreational%20Forest!5e0!3m2!1sen!2sus!4v1678040259317!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="polaroid iframe-tile">
+                    <iframe src="https://www.youtube.com/embed/PhmQRJfGekk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <div class="bottom-navigation">
+                <h3><a href="index.html">Weird, Wonderful North Carolina</a></h3>
+                <h3><a href="piedmont.html"><u>East</u><br>Reed Gold Mine</a></h3>
+            </div>
+        </div>
+       
+        
+        <script>
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>

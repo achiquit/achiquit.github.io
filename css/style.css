@@ -8,11 +8,38 @@
     padding-top:15px;
 }
 
-.blog-post p {
+.blog-post {
   text-align: justify;
   text-justify: inter-word;
+/*
   -moz-text-align-last: center;
   text-align-last: center;
+*/
+}
+
+/*Images*/
+
+.image-container {
+    border-style: double;
+    display: block;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 10px;
+    height: 550px;
+}
+
+.image-container > h5 {
+
+}
+
+.post-img {
+
+}
+
+.centered-iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-tile-text {
@@ -213,6 +240,13 @@ testimonials:focus {
 .blog-img div {
     border-style:double;
     padding-bottom: 15px;
+}
+
+.blog-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* End my shitey additions */

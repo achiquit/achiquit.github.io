@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the blurb of text below the name of the website in search results.">
+        <title>Weird, Wonderful North Carolina</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="icon" href="img/note.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!--this is a comment. all visible content must go inside the body-->
+    <body>
+        <div id="home-background">
+            <header>
+                <nav>
+                    <i onclick="openNav()" class="burger fa fa-bars fa-2x"></i>
+                    <div class="desktop-menu">
+                        <a class="menu-item" href="mountains.html">Mountains</a>
+                        <a class="menu-item" href="piedmont.html">Piedmont</a>
+                        <a class="menu-item" href="index.html"><u>Home</u></a>
+                        <a class="menu-item" href="coastal-plain.html">Inner Coastal Plain</a>
+                        <a class="menu-item" href="tidewater.html">Tidewater</a>
+                    </div>
+                </nav>
+            </header>
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="mountains.html">Mountains</a>
+              <a href="piedmont.html">Piedmont</a>
+              <a href="coastal-plain.html">Inner Coastal Plain</a>
+              <a href="tidewater.html">Tidewater</a>
+            </div>
+
+            <div id="home-content">
+                <h1>Weird, Wonderful North Carolina</h1>
+                <p>From wild horses on the beach to blue fireflies in the mountains, North Carolina is full of fascinating phenomena. Dive in and explore the weird wonders of the Tarheel State.</p>
+            </div>
+        </div>
+       
+        
+        <script>
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>

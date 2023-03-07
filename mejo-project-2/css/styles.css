@@ -1,0 +1,311 @@
+/* QUESTIONS:
+
+Why is there extra vertical scroll space on the homepage?
+How can I manage the sticky for the desktop navbar better? */
+
+/*GLOBAL STYLES*/
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 105%;
+    margin: 0;
+    margin-top: -5px;
+    background-color: rgb(46, 46, 46);
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+a, h1, h2, h3, p {
+    color:ghostwhite;
+}
+
+a {
+    text-decoration: underline;
+}
+
+header {
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+
+.title-area > h1 {
+    font-size: 3em;
+}
+
+.menu-item {
+    margin:20px;
+    font-size:1.5em;
+    font-weight: 100;
+}
+
+.menu-item:hover{
+    color: #c6c6c6;
+    transition:0.3s;
+}
+
+br {
+    margin: 5px;
+}
+
+.subscript {
+    font-size: 9pt;
+    text-align:left;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 40%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.9);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-radius: 5px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.burger {
+    margin: 5px 20px 5px 5px;
+    color: ghostwhite;
+}
+
+/*HOMEPAGE STYLES*/
+
+#home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    height: 85%;
+}
+
+#home-content > h1 {
+    text-shadow: 2px 2px 1px black;
+}
+
+#home-content > p {
+    text-shadow: 1px 1px 2px black;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 5px;
+    width: 99%;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+#home-background {
+    background-image: url('../img/home-background-still.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+/* CONTENT PAGE STYLES */
+
+.title-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    height: 97%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title-area > h1 {
+    margin-bottom: 10%;
+    text-shadow: 2px 2px 1px black;
+}
+
+.content-gradient {
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(46, 46, 46, 0), rgba(46, 46, 46, 1));
+/*    background-color: rgba(0, 255, 255, 0.43);*/
+}
+
+div.polaroid {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.67), 0 6px 20px 0 rgba(0, 0, 0, 0.67);
+    border: 2px solid black;
+}
+
+div.polaroid-image > img {
+    height: 100%;
+    width: 100%;
+}
+
+div.polaroid > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-tile {
+    height: 225px;
+}
+
+div.image-text {
+    text-align: center;    
+}
+
+.image-text > p {
+    color: black;
+}
+
+.body-content {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.multiple-tiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+}
+
+.multiple-tiles > .polaroid {
+    margin: 10px;
+}
+
+/* BOTTOM NAV STYLES */
+
+.bottom-navigation {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    border-top: 2px solid ghostwhite;
+    border-bottom: 2px solid ghostwhite;
+    width: 100%;
+}
+
+.bottom-navigation > h3 {
+    text-shadow: 2px 2px 1px black;
+    width: 50%;
+    margin: 15px;
+}
+
+.back, .next {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+/* Mountains Only Styles */
+
+#mountains-title {
+    background-image: url('../img/fireflies-home.jpg');
+}
+
+/* Piedmont Only Styles */
+
+#piedmont-title {
+    background-image: url('../img/mountains-home.jpg')
+}
+
+/* Coastal Plain Only Styles */
+
+#coastal-plain-title {
+    background-image: url('../img/black-river-home.jpg')
+}
+
+/* Tidewater Only Styles */
+
+#tidewater-title {
+    background-image: url('../img/horses-home3.jpg');
+}
+
+
+/* ### DESKTOP STYLES ### */
+
+@media screen and (min-width: 1025px) {
+    
+    .burger {
+        display: none!important;
+    }
+    
+    .desktop-menu {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .desktop-menu > a {
+        text-shadow: 2px 2px 1px black;
+    }
+    
+    .multiple-tiles > div {
+        width: 45%;
+        height: 400px;
+    }
+    
+    .polaroid-image {
+        height: 300px;
+    }
+    
+    .bottom-navigation > h3, a {
+        text-decoration: none;
+        
+    }
+    
+    .bottom-navigation > h3, a:hover {
+        color: #c6c6c6;
+        transition: 0.3s;
+    }
+    
+    #tidewater-title {
+        background-position: bottom;
+    }
+
+    #tidewater-title h1 {
+        margin-bottom: 2%;
+    }
+}
