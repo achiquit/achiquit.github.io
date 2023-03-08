@@ -184,6 +184,7 @@ div.polaroid > iframe {
 }
 
 /* Fancy CSS */
+/* Courtesy of Temani Afif from CodePen: https://codepen.io/t_afif/pen/PoBQRmj */
 
 figure {
   display: grid;
@@ -290,6 +291,11 @@ div.image-text {
     align-items: center;
 }
 
+.bottom-navigation > h3, a {
+    text-decoration: none;
+
+}
+
 /* Mountains Only Styles */
 
 #mountains-title {
@@ -358,11 +364,6 @@ div.image-text {
     
     .polaroid-image {
         height: 300px;
-    }
-    
-    .bottom-navigation > h3, a {
-        text-decoration: none;
-        
     }
     
     .bottom-navigation > h3, a:hover {
