@@ -1,3 +1,60 @@
+/* ##### - Solo Summer Interactive Page - ##### */
+.country {
+    height: 500px;
+    display: flex;
+}
+
+.country-content {
+    width: 65%;
+    height: 100%;
+    display: flex;
+}
+
+.country-content > h1 {
+    color: white;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+.left > h1 {
+    rotate: 180deg;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.country-image {
+    width: 35%;
+    height: 100%;
+    display: inline-block;
+}
+
+.country-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plus-minus {
+    position: absolute;
+    margin: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    font-size: 4em;
+    padding-left: 20px;
+}
+
+.rotated{
+    transform:rotateZ(45deg);
+    transition:.3s linear;
+}
+
+.extra-country-content {
+    display: none;
+    height: 400px;
+}
+
 /* My shitey additions */
 .smooth-scroll {
     overflow-y: scroll;
