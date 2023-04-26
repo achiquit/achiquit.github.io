@@ -29,7 +29,7 @@ $(function(){
 				trigger: "#brazil", //The element that will trigger the animation
 				start: "-150px center", //Starting point, e.g., 500 pixels down from the top
 				end: "1500px center",
-				markers: true, //Delete the markers before putting it on the Internet
+				markers: false, //Delete the markers before putting it on the Internet
 				toggleActions: "play reverse play reverse" //On Enter, On Leave, On Reverse Enter, On Reverse Leave
 			},
 			display:'flex',   //The CSS you want to animate
@@ -41,7 +41,7 @@ $(function(){
 				trigger: "#brazil", //The element that will trigger the animation
 				start: "350px center", //Starting point, e.g., 500 pixels down from the top
 				end: "1500px center",
-				markers: true, //Delete the markers before putting it on the Internet
+				markers: false, //Delete the markers before putting it on the Internet
 				toggleActions: "play reverse play reverse" //On Enter, On Leave, On Reverse Enter, On Reverse Leave
 			},
 			display:'flex',   //The CSS you want to animate
@@ -53,7 +53,7 @@ $(function(){
 				trigger: "#brazil", //The element that will trigger the animation
 				start: "850px center", //Starting point, e.g., 500 pixels down from the top
 				end: "1530px center",
-				markers: true, //Delete the markers before putting it on the Internet
+				markers: false, //Delete the markers before putting it on the Internet
 				toggleActions: "play reverse play reverse" //On Enter, On Leave, On Reverse Enter, On Reverse Leave
 			},
 			display:'flex',   //The CSS you want to animate
