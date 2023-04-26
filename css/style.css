@@ -10,10 +10,25 @@
     display: flex;
 }
 
+.blog-links {
+    display: flex;
+    justify-content: space-around;
+}
+
 .country-content > h1 {
     color: white;
     writing-mode: vertical-rl;
     text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-content > p {
+    margin: 10px;
 }
 
 .left > h1 {
@@ -55,9 +70,25 @@
     height: 400px;
 }
 
+.flourish-chart {
+    width: 30%;
+}
+
+.flex-extra-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-extra-content > p {
+    width: 40%;
+    text-align: center;
+}
+
 #brazil, #norway, #germany {
     display: flex;
-    transform: translateX(-50%);
+    position: relative;
+    transform: translateX(-100%);
 }
 
 /* My shitey additions */
@@ -88,14 +119,6 @@
     flex-direction: column;
     padding-top: 10px;
     height: 550px;
-}
-
-.image-container > h5 {
-
-}
-
-.post-img {
-
 }
 
 .centered-iframe {
@@ -247,11 +270,11 @@
     }
 }
 
-testimonials:focus {
+/* testimonials:focus {
     .testimonials-link {
         text-decoration: underline;
     }
-}
+} */
 
 @media only screen and (max-width:768px){
     /* Mobile only */
