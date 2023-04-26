@@ -55,6 +55,11 @@
     height: 400px;
 }
 
+#brazil, #norway, #germany {
+    display: flex;
+    transform: translateX(-50%);
+}
+
 /* My shitey additions */
 .smooth-scroll {
     overflow-y: scroll;
