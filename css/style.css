@@ -15,6 +15,10 @@
     justify-content: space-around;
 }
 
+.blog-links > h4 {
+    width: 25%;
+}
+
 .country-content > h1 {
     color: white;
     writing-mode: vertical-rl;
@@ -42,7 +46,9 @@
 .country-image {
     width: 35%;
     height: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .country-image > img {
@@ -53,15 +59,15 @@
 
 .plus-minus {
     position: absolute;
-    margin: 5px;
     text-shadow: 2px 2px 4px #000000;
     color: white;
-    font-size: 4em;
-    padding-left: 20px;
+    font-size: 5em;
+    margin-bottom: 20px;
+    transition: .3s;
 }
 
 .rotated{
-    transform:rotateZ(45deg);
+    transform:rotateZ(180deg);
     transition:.3s linear;
 }
 
@@ -85,7 +91,7 @@
     text-align: center;
 }
 
-#brazil, #norway, #germany {
+#us, #brazil, #norway, #germany {
     display: flex;
     position: relative;
     transform: translateX(-100%);
@@ -342,7 +348,9 @@ body {
   color: #777;
   font-weight: 300;
   font-size: 1rem;
-  background: #000; }
+  background: #000; 
+  overflow-x: hidden;
+}
 
 ::-moz-selection {
   background: #000;
