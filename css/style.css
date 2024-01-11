@@ -119,6 +119,10 @@
 */
 }
 
+.left-list > li {
+    text-align: left;
+}
+
 /*Images*/
 
 .image-container {
