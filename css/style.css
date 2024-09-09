@@ -101,6 +101,43 @@
 }
 
 /* My shitey additions */
+.music-video {
+    border-style: double;
+}
+
+.music-download-widget {
+    text-align: center;
+}
+
+.music-download-widget > img {
+    width: 60%;
+}
+
+.music-download-widget > p {
+    padding-top: 5px;
+}
+
+#lith > div {
+    width: 100%;
+    border-radius: 10px;
+    background-image: url("../images/blog-img/tech-blog/2024/lith/banner1.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+#lith-content {
+    padding-top: 20px;
+}
+
+.piano-title {
+    text-shadow: 2px 2px 2px black;
+    color: white;
+}
+
+#piano-title {
+    padding-top: 20px;
+}
+
 .smooth-scroll {
     overflow-y: scroll;
     scroll-behavior: smooth;
