@@ -101,6 +101,15 @@
 }
 
 /* My shitey additions */
+
+.blog-sidebar > hr {
+    color: "#2fc898";
+    border: solid #2fc898; 
+    border-width: 1px 0 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .music-video {
     border-style: double;
 }
@@ -148,7 +157,7 @@
 }
 
 .blog-post {
-  text-align: justify;
+  text-align: center;
   text-justify: inter-word;
 /*
   -moz-text-align-last: center;
