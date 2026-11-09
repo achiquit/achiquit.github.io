@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YJWM5NM3W"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7YJWM5NM3W');
+        </script>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Andre Chiquito</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <style type="text/tailwindcss">
+        @layer utilities {
+            .hamburger-toggle {
+              @apply [&>div]:h-0 [&>div]:bg-white [&>div]:before:translate-y-0 [&>div]:before:rotate-45 [&>div]:after:translate-y-0 [&>div]:after:-rotate-45;
+            }
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/c8077251a5.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+        <link href="/styles.css" rel="stylesheet">
+        <link rel="icon" href="/favicon.png">
+    </head>
+    <body class="bg-gray-950">
+
+        <div id="header" class="sticky top-0 z-50"></div>
+        
+        <main id="main" class="bg-gray-950 container mx-auto px-4 py-6">
+
+            <p class="text-white text-6xl text-center">Photography</p>
+            <div class="mt-4 grid grid-cols-3 gap-4 [&>p]:text-center">
+                <p class="filter text-white" id="blackandwhite">B&amp;W</p>
+                <p class="filter text-white" id="color">Color</p>
+                <p class="filter text-white" id="landscape">Landscape</p>
+                <p class="filter text-white" id="action">Action</p>
+                <p class="filter text-white" id="wildlife">Wildlife</p>
+                <p class="filter text-emerald-300" id="everything">Everything</p>
+            </div>
+
+            <hr class="w-7/8 h-px mx-auto my-6 bg-emerald-300 border-0">
+
+            <div class="photos grid grid-cols-2 gap-2 lg:grid-cols-4">
+
+                    <!-- <div class="photo XXX">
+                        <img src="/images/gallery/small/XX.jpg" title="XXX" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/XX.jpg" title="XXX" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>XXX</b></p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="photo action color">
+                        <img src="/images/gallery/small/45.jpg" title="glass menagerie hanging belay" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/45.jpg" title="glass menagerie hanging belay - large resolution" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Climbers at the hanging belay below the iconic roof of The Glass Menagerie on Looking Glass Rock. Pisgah National Forest, North Carolina</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action color">
+                        <img src="/images/gallery/small/44.jpg" title="high on yankee clipper" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/44.jpg" title="high on yankee clipper - large resolution" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A climber high on Yankee Clipper in El Potrero Chico, Mexico</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color landscape">
+                        <img src="/images/gallery/small/43.jpg" title="sunrise over lonesome lake" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/43.jpg" title="sunrise over lonesome lake - large resolution" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Sunrise over Lonesome Lake in the Wind River Range, Wyoming</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape action">
+                        <img src="/images/gallery/small/42.jpg" title="climbing the first flatiron" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/42.jpg" title="climbing the first flatiron - large resolution" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A climber high on the first flatiron with the city of Boulder far below</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/00.png" title="Rappelling Stephen's Gap cave" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 px-4 h-screen">
+                                <img src="/images/gallery/large/00.png" title="Rappelling Stephen's Gap cave - large resolution" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center text-shadow-md/70"><b>The keyhole rappel in Stephen's Gap cave, Alabama</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo wildlife">
+                        <img src="/images/gallery/small/02.jpg" title="A captive coati in Panama" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/02.jpg" title="A captive coati in Panama - large resolution" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A captive Coati near Colon, Panama</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/01.jpg" title="Flowers on Acatenango with volcan fuego in the background" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/01.jpg" title="Flowers on Acatenango with volcan fuego in the background - large resolution" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Flowers on Acatenango with Volcan Fuego in the background, Antigua, Guatemala</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/07.png" title="Storm clouds on the horizon from South Sixshooter, Utah" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/07.png" title="Storm clouds on the horizon from South Sixshooter, Utah" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Storm clouds on the horizon from South Sixshooter, Utah</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="photo blackandwhite">
+                        <img src="/images/gallery/small/08.png" title="Intense shadows on a model's back" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/08.png" title="Intense shadows on a model's back" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Experimenting with shadows</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/09.png" title="Aerialist in a wrap on a windy day" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/09.png" title="Aerialist in a wrap on a windy day" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>An aerialist performing outdoors on a windy day</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/10.png" title="Danbo peering out at the world" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/10.png" title="Danbo peering out at the world" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Danbo peering out at the world</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/28.jpg" title="A cave in West Virginia" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/28.jpg" title="A cave in West Virginia" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A cave in West Virginia</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/03.png" title="The view down the valley from the top of 13-bolt wall, Colorado" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/03.png" title="The view down the valley from the top of 13-bolt wall, Colorado" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>The view down the valley from the top of 13-bolt wall, Colorado</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/04.jpg" title="Sunset view from the top of the Pao de Acucar, Rio de Janeiro, Brazil" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/04.jpg" title="Sunset view from the top of the Pao de Acucar, Rio de Janeiro, Brazil" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Sunset view from the top of the Pao de Acucar, Rio de Janeiro, Brazil</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/18.jpg" title="Waterfall in Washington" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/18.jpg" title="Waterfall in Washington" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Waterfall in Washington</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/05.jpg" title="Shagg lake, Maine" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/05.jpg" title="Shagg lake, Maine" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Shagg lake, Maine</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/17.jpg" title="Looking South on the way up Atigun Pass, Alaska" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/17.jpg" title="Looking South on the way up Atigun Pass, Alaska" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Looking South on the way up Atigun Pass, Alaska</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/19.jpg" title="Giant tree in Washington" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/19.jpg" title="Giant tree in Washington" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A giant tree in Washington State</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo wildlife">
+                        <img src="/images/gallery/small/20.jpg" title="Jaguar in Belize" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/20.jpg" title="Jaguar in Belize" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A sleepy, post-dinner Jaguar in Belize</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/12.png" title="Mooshroom among moss looking towards a window" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/12.png" title="Mooshroom among moss looking towards a window" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Experimenting with miniature photography</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/13.png" title="Three stones with reflection" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/13.png" title="Three stones with reflection" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A hand reflected in three glass stones</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo blackandwhite">
+                        <img src="/images/gallery/small/11.png" title="Japanese tea house at Duke Gardens, North Carolina" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/11.png" title="Japanese tea house at Duke Gardens, North Carolina" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Japanese tea house at Duke Gardens, North Carolina</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/14.png" title="Durham central bus station with tiltshift" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/14.png" title="Durham central bus station with tiltshift" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Durham central bus station with tiltshift</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/15.png" title="Teer quarry at sunrise" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/15.png" title="Teer quarry at sunrise" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Teer quarry at sunrise, Durham North Carolina</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/16.jpg" title="Appropriately placed Milk graffiti" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/16.jpg" title="Appropriately placed Milk graffiti" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Appropriately placed Milk graffiti</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo wildlife">
+                        <img src="/images/gallery/small/27.jpg" title="Relaxing in the Norwegian wilderness" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/27.jpg" title="Relaxing in the Norwegian wilderness" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Relaxing in the Norwegian wilderness</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/21.jpg" title="An eruption on Volcan Fuego" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/21.jpg" title="An erption on Volcan Fuego" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>An eruption on Volcan Fuego from Acatenango</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/22.jpg" title="Waterfall in Cloudbridge Reserve, Costa Rica" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/22.jpg" title="Waterfall in Cloudbridge Reserve, Costa Rica" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Waterfall in Cloudbridge Reserve, Costa Rica</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/23.jpg" title="A swing in the jungle in Panama" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/23.jpg" title="A swing in the jungle in Panama" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A swing in the jungle in Panama</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/24.jpg" title="A basic hotel on an island village on the coast of Panama, San Blas Islands" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/24.jpg" title="A basic hotel on an island village on the coast of Panama, San Blas Islands" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A basic hotel on an island village on the coast of Panama, San Blas Islands</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/25.jpg" title="Rocky beach in northern Colombia, near the Darien Gap" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/25.jpg" title="Rocky beach in northern Colombia, near the Darien Gap" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Rocky beach in northern Colombia, near the Darien Gap</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/26.jpg" title="Climbing above the clouds on Corcovado, Rio de Janeiro, Brazil" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/26.jpg" title="Climbing above the clouds on Corcovado, Rio de Janeiro, Brazil" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Climbing above the clouds on Corcovado, Rio de Janeiro, Brazil</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/29.jpg" title="A climber rappelling into The Underworld, Linville Gorge, North Carolina" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/29.jpg" title="A climber rappelling into The Underworld, Linville Gorge, North Carolina" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A climber rappelling into The Underworld, Linville Gorge, North Carolina</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/30.jpg" title="A climber low on Ixtaccihuatl, Mexico" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/30.jpg" title="A climber low on Ixtaccihuatl, Mexico" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A climber low on Ixtaccihuatl, Mexico</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/31.jpg" title="Popocatépetl erupting with the knees of The Sleeping Lady, Ixtaccihuatl in the foreground" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/31.jpg" title="Popocatépetl erupting with the knees of The Sleeping Lady, Ixtaccihuatl in the foreground" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Popocatépetl erupting with the knees of The Sleeping Lady, Ixtaccihuatl in the foreground</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/32.jpg" title="Two Spanish climbers nearing the summit of Ixtaccihuatl, Mexico" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/32.jpg" title="Two Spanish climbers nearing the summit of Ixtaccihuatl, Mexico" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Two Spanish climbers nearing the summit of Ixtaccihuatl, Mexico</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/33.jpg" title="Climbers on a saddle high on Ixtaccihuatl, Mexico" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/33.jpg" title="Climbers on a saddle high on Ixtaccihuatl, Mexico" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Climbers on a saddle high on Ixtaccihuatl, Mexico</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/34.jpg" title="A climber descending from a climb in Cochise Stronghold, Arizona" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/34.jpg" title="A climber descending from a climb in Cochise Stronghold, Arizona" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A climber descending from a climb in Cochise Stronghold, Arizona</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/35.jpg" title="Mists enveloping Nelson Rocks, West Virginia" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/35.jpg" title="Mists enveloping Nelson Rocks, West Virginia" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Mists enveloping Nelson Rocks, West Virginia</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/36.jpg" title="A sillhouetted caver exiting the Sinks of Gandy, West Virginia" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/36.jpg" title="A sillhouetted caver exiting the Sinks of Gandy, West Virginia" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A sillhouetted caver exiting the Sinks of Gandy, West Virginia</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo color">
+                        <img src="/images/gallery/small/37.jpg" title="Climbers cross the bridge on the Nelson Rocks Via Ferrata, West Virginia" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/37.jpg" title="Climbers cross the bridge on the Nelson Rocks Via Ferrata, West Virginia" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Climbers cross the bridge on the Nelson Rocks Via Ferrata, West Virginia</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo landscape">
+                        <img src="/images/gallery/small/39.jpg" title="Pico Maior seen from the summit of Capacete. Tres Picos, RJ, Brazil" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/39.jpg" title="Pico Maior seen from the summit of Capacete. Tres Picos, RJ, Brazil" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>Pico Maior seen from the summit of Capacete. Tres Picos, RJ, Brazil</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="photo action">
+                        <img src="/images/gallery/small/40.png" title="climber silhouetted in el potrero chico mexico" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/40.png" title="climber silhouetted in el potrero chico mexico" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A climber silhouetted in El Potrero Chico</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo action">
+                        <img src="/images/gallery/small/41.png" title="climber ascending crotchrocket spire in the north fork valley, West Virginia" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/41.png" title="climber ascending crotchrocket spire in the north fork valley, West Virginia" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>A climber ascending Crotchrocket Spire in the North Fork Valley, West Virginia</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="photo XXX">
+                        <img src="/images/gallery/small/XX.jpg" title="XXX" class="small-img rounded-lg color-scroll transition duration-900 aspect-square object-cover">
+                        <div class="big-img fixed size-full left-0 top-8 z-40 backdrop-blur-sm hidden h-screen">
+                            <div class="flex flex-col justify-center align-center gap-4 h-screen px-4">
+                                <img src="/images/gallery/large/XX.jpg" title="XXX" class="shadow-lg border-4 border-solid max-h-[70vh] mx-auto">
+                                <p class="text-lg text-white text-center pt-2 text-shadow-md/70"><b>XXX</b></p>
+                            </div>
+                        </div>
+                    </div> -->
+
+            </div>
+        </main>
+
+        <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="/js/photography.js"></script>
+        
+    </body>
+</html>

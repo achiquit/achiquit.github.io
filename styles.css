@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Josefin-Sans-Regular';
+    src:url('fonts/josefin/Josefin-Sans-Regular.ttf.woff') format('woff'),
+        url('fonts/josefin/Josefin-Sans-Regular.ttf.svg#Josefin-Sans-Regular') format('svg'),
+        url('fonts/josefin/Josefin-Sans-Regular.ttf.eot'),
+        url('fonts/josefin/Josefin-Sans-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Josefin-Sans-Regular';
+}
+
+.tile-title {
+    text-shadow: 2px 2px 4px black;
+}
+
+#employment, #accomplishments, #education, #certifications, #references, #testimonials {
+    scroll-margin-top: 100px;
+}
+
+/* Comment Box styling */
+#HCB_comment_box > a {
+    display: none;
+}
+.home-desc {
+    display: none;
+}
+#hcb_form > small {
+    display: none;
+}
+.admin-link {
+    display: none;
+}
+.hcb-comment-body {
+    color: oklch(70.7% 0.022 261.325);
+}
+.author {
+    color: oklch(84.5% 0.143 164.978);
+}
+
+#photo {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}

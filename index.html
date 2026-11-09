@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YJWM5NM3W"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7YJWM5NM3W');
+        </script>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Andre Chiquito</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <style type="text/tailwindcss">
+        @layer utilities {
+            .hamburger-toggle {
+              @apply [&>div]:h-0 [&>div]:bg-white [&>div]:before:translate-y-0 [&>div]:before:rotate-45 [&>div]:after:translate-y-0 [&>div]:after:-rotate-45;
+            }
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/c8077251a5.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="/favicon.png">
+    </head>
+    <body class="bg-gray-950">
+
+        <div id="header" class="sticky top-0 z-50"></div>
+        
+        <main id="main" class="bg-gray-950 container mx-auto px-4 py-6 transition-all duration-600">
+
+            <div class="grid gap-4 mb-10 grid-cols-1 md:grid-cols-4 lg:grid-cols-3">
+                <a href="/about/" class="md:col-span-2 lg:col-span-1">
+                    <div class="bg-[url(images/tiles/about.jpg)] bg-cover w-full aspect-square p-4 flex justify-center color-scroll-sm lg:grayscale lg:[&:hover]:grayscale-0 transition duration-300 transition-discrete">
+                        <h3 class="font-thin text-3xl text-white drop-shadow-lg tile-title content-center">About Me</h3>
+                    </div>
+                </a>
+
+                <a href="/adventures/" class="md:col-span-2 lg:col-span-1">
+                    <div class="bg-[url(adventures/2026/cirque-of-the-towers/tile-img.png)] bg-cover w-full aspect-square p-4 flex justify-center color-scroll-sm grayscale lg:[&:hover]:grayscale-0 transition duration-300 transition-discrete">
+                        <h3 class="font-thin text-3xl text-white drop-shadow-lg tile-title content-center">Adventures</h3>
+                    </div>
+                </a>
+
+                <a href="/photography" class="bg-[url(images/tiles/photography.png)] bg-center bg-cover grayscale transition duration-300 transition-discrete hidden color-scroll-md md:block md:col-span-4 lg:hidden">
+                    <div class="w-full aspect-2/1 grid place-content-center">
+                        <h3 class="font-thin text-3xl text-white drop-shadow-lg tile-title text-center">Photographs</h3>
+                    </div>
+                </a>
+
+                <a href="/photography" class="md:hidden lg:col-span-1 lg:block">
+                    <div class="bg-[url(images/tiles/photography-1.jpg)] bg-cover w-full aspect-square p-4 grid gap-4 place-content-center color-scroll-sm grayscale lg:[&:hover]:grayscale-0 transition duration-300 transition-discrete">
+                        <h3 class="font-thin text-3xl text-white drop-shadow-lg tile-title text-center">Photographs</h3>
+                    </div>
+                </a>
+            </div>
+
+        </main>
+
+        <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/js/script.js"></script>
+        
+    </body>
+</html>

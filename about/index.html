@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YJWM5NM3W"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7YJWM5NM3W');
+        </script>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AC - About</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+        <style type="text/tailwindcss">
+        @layer utilities {
+            .hamburger-toggle {
+              @apply [&>div]:h-0 [&>div]:bg-white [&>div]:before:translate-y-0 [&>div]:before:rotate-45 [&>div]:after:translate-y-0 [&>div]:after:-rotate-45;
+            }
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/c8077251a5.js" crossorigin="anonymous"></script>
+        <link href="/styles.css" rel="stylesheet">
+        <link rel="icon" href="/favicon.png">
+    </head>
+    <body class="bg-gray-950">
+
+        <div id="header" class="sticky top-0 z-60"></div>
+        
+        <main id="main" class="bg-gray-950 container mx-auto px-4 py-6 transition-all duration-600">
+            <div>
+                <p class="text-white text-6xl text-center pb-8">About Me</p>
+                
+                <div class="lg:flex">
+                    
+                    <img src="/images/misc-pages/me-talking.jpg" class="rounded-3xl object-cover w-1/3 mx-8 hidden lg:block">
+                    
+                    <div>
+                        <div class="relative pt-4 -right-4 lg:right-0">
+                            <p class="relative text-white text-4xl text-center pb-4 right-4 lg:right-0">Professional Life</p>
+                            <img src="/images/misc-pages/me-talking.jpg" class="rounded-l-3xl w-1/2 object-cover object-top float-right md:mask-r-from-80% lg:hidden">
+                            <p class="text-gray-400 relative right-4 lg:right-0">My professional journey began with a six-year run in IT User Support, where I started my lifelong career working in helping professions. As a non-traditional student at the University of North Carolina at Chapel Hill, I pursued an exciting blend of Information Science and Psychology, allowing me to fuse my interests in technology with insights into human behavior. This interdisciplinary approach has provided me with a strong, holistic foundation on which to build my career in mental health support.<br>My love for the outdoors began during my time at The University of North Carolina at Chapel Hill, where I taught climbing techniques to the university climbing club and took the initiative to establish an aerial silks community on campus. These experiences not only enhanced my leadership skills but also deepened my appreciation for nature and adventure, which led to three seasons spent guiding and teaching rock climbing at Seneca Rocks Mountain Guides in West Virginia.<br>Starting in Fall 2026, I came to Denver University's <a href="https://psychology.du.edu/academics/ma-international-disaster-psychology-trauma-global-mental-health" target="_blank">Masters of International Disaster Psychology program</a>, where I focus on creative interventions for underserved populations, bringing mental health and psychosocial support to the doorsteps of the people who need it most.<br><br>See my <a href="/resume" class="text-emerald-300">Curriculum Vitae</a> for more information!</p>
+
+                        </div>
+
+                        <div class="relative pt-4 -left-4 lg:left-0">
+                            <p class="text-white text-4xl relative pb-4 text-center left-4 lg:left-0">Personal Life</p>
+                            <img src="/images/misc-pages/about-headshot.jpg" class="rounded-r-3xl w-1/2 object-cover object-top float-left md:mask-l-from-80% lg:hidden">
+                            <p class="text-gray-400 relative left-4 lg:left-0">I am an adventurer and a dabbler. I discovered a deep love of adventures through rock climbing with the UNC Chapel Hill climbing club; ever since my first outdoor climb <span class="date-count" data-date="2019-06-15"></span> years ago, I've been seriously engaging in outdoor pursuits. What draws me most to adventure, and what drove me to arrange my life around enabling such adventures, is the personal growth, diverse experiences, and rare friendships garnered while engaged in a wild adventure!<br>Beyond adventuring, I explore a wide range of hobbies, from playing piano to making salve from foraged ingredients to building my personal website from scratch.<br>I also explore photography in an attempt to capture the beauty of the places and people my adventures take me to. Due to my light-weight tendencies and my razor-thin budgets, all my photos are taken with my Google Pixel phone.<br><br>See my <a href="/photography" class="text-emerald-300">portfolio</a> to check out my photos!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/js/script.js"></script>
+        
+    </body>
+</html>

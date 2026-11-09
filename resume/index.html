@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YJWM5NM3W"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7YJWM5NM3W');
+        </script>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <style type="text/tailwindcss">
+        @layer utilities {
+            .hamburger-toggle {
+              @apply [&>div]:h-0 [&>div]:bg-white [&>div]:before:translate-y-0 [&>div]:before:rotate-45 [&>div]:after:translate-y-0 [&>div]:after:-rotate-45;
+            }
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/c8077251a5.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+        <link href="/styles.css" rel="stylesheet">
+        <link rel="icon" href="/favicon.png">
+    </head>
+    <body class="bg-gray-950">
+
+        <div id="header" class="sticky top-0 z-70 lg:relative"></div>
+
+        <div class="bg-gray-950 fixed top-0 h-screen w-screen overflow-y-auto z-65 hidden lg:w-3/8" id="timeline">
+            <i class="text-white text-4xl fa-solid fa-x fixed top-20 pl-4 timeline-btn"></i>
+            <img src="/resume/resources/timeline.png" class="mx-auto">
+        </div>
+
+        <main id="main" class="bg-gray-950 container mx-auto px-4 py-6 transition-all duration-600">
+        <a class="anchor" id="top"></a>
+        <div class="lg:flex lg:flex-row">
+
+            <!-- Nav -->
+            <div class="flex flex-col items-center justify-center mb-4 lg:h-1/2 lg:sticky lg:top-64 lg:mx-16 lg:w-1/3">
+                <p class="text-white text-3xl">Andre Chiquito</p>
+                <hr class="h-px my-2 bg-gray-200 border-0 w-2/3">
+                <p class="text-white"><a target="_blank" href="mailto:andre.chiquito@gmail.com" class="hover:underline">andre.chiquito@gmail.com</a> <b>|</b> +1 919 638 9753</p>
+                <hr class="h-px my-2 bg-gray-200 border-0 w-2/3">
+                <p class="text-white text-center"><a class="text-lg hover:underline" href="#employment">Employment</a> | <a class="text-lg hover:underline" href="#accomplishments">Accomplishments</a> | <a class="text-lg hover:underline" href="#education">Education</a> | <a class="text-lg hover:underline" href="#certifications">Certifications</a> | <a class="text-lg hover:underline" href="#testimonials">Testimonials</a> | <span class="hover:underline text-lg timeline-btn">Timeline</span></p>
+                <!-- <hr class="h-px my-2 bg-gray-200 border-0 w-2/3">
+                <p class="text-white text-center"><span id="outdoors" class="hover:underline text-emerald-300 transition transition-all duration-300">Outdoors</span> | <span id="tech" class="hover:underline text-emerald-300 transition transition-all duration-300">Tech &amp; Customer Service</span></p> -->
+            </div>
+            
+            <div class="lg:w-2/3 [&>hr]:h-px [&>hr]:my-2 [&>hr]:bg-gray-200 [&>hr]:border-0 [&>hr]:w-5/6 [&>hr]:m-auto [&>hr]:mt-4 [&_a]:text-emerald-300">
+
+                <!-- Employment -->
+                <div id="employment" class="[&_span]:text-white [&_.title]:text-emerald-300 [&_.title]:text-xl [&_.ref]:text-lg [&_ul]:text-gray-400 [&_ul]:list-disc [&_ul]:ml-4">
+
+                <p class="text-white text-2xl text-center mb-4">Employment</p>
+                    <div class="grid cols-1 gap-4">
+
+                        <!-- Emily Griffith Technical College -->
+                        <div class="outdoors" id="egtc">
+                            <p class="title">Emily Griffith Technical College <span>|</span> Intern</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Kelli Woodard - 720 202 3194 <span>|</span> <a target="_blank" href="mailto:kelli.woodard@emilygriffith.edu">kelli.woodard@emilygriffith.edu</a></li>
+                            </ul>
+                            <p class="text-gray-400">October 2026 - Present</p>
+                            <ul>
+                                <li>Assisted recent immigrants with resourcing and job readiness</li>
+                                <li>Utilized phone based interpreters to work with clients with limited English proficiency</li>
+                                <li>Developed a procedure for documenting client interaction meeting CO state requirements to stay compliant with grant requirements</li>
+                                <li>Assisted in public technology literacy classes</li>
+                            </ul>
+                        </div>
+
+                        <!-- SRMG-->
+                        <div class="outdoors" id="srmg">
+                            <p class="title">Seneca Rocks Mountain Guides <span>|</span> Climbing Guide</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden ref">
+                                <li class="ml-1 ref">Tom Cecil - 304 940 3631 <span>|</span> <a target="_blank" href="mailto:tomcecil@gmail.com">tomcecil@gmail.com</a></li>
+                            </ul>
+                            <p class="text-gray-400">2024, 2025 &amp; 2026 Seasons</p>
+                            <ul>
+                                <li>Led traditional rock climbing trips for individuals and groups of various skill levels</li>
+                                <li>Conducted thorough risk assessments and made informed decisions regarding route selection and weather conditions</li>
+                                <li>Communicated effectively with clients to understand their goals and tailor climbing experiences to meet their needs</li>
+                                <li>Played key roles, including incident commander, during emergency high angle rescues for injured climbers</li>
+                                <li>Provided personalized instruction and coaching to clients to improve their climbing skills</li>
+                                <li>Instructed the following:</li>
+                                <ul class="pl-2">
+                                    <li>High angle rescue clinic</li>
+                                    <li>Trad climbing fundamentals course</li>
+                                    <li>Introduction to big walling course</li>
+                                    <li>Introduction to multipitch climbing course</li>
+                                </ul>
+                            </ul>
+                            
+                        </div>
+
+                        <!-- NRocks -->
+                        <div class="outdoors" id="nrocks">
+                            <p class="title">NRocks Outdoor Adventures <span>|</span> Adventure Guide</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Chris Conger - 803 792 5743 <span>|</span> <a target="_blank" href="mailto:cconger548@gmail.com">cconger548@gmail.com</a></li>
+                            </ul>
+                            <p class="text-gray-400">2024, 2025 &amp; 2026 Seasons</p>
+                            <ul>
+                                <li>Facilitated via ferrata tours for up to 14 guests</li>
+                                <li>Trained guests to safely and independently navigate a via ferrata</li>
+                                <li>Assisted in staff high angle emergency rescue training</li>
+                                <li>Coached and supported novice climbers through mild to intense fear and anxiety</li>
+                                <li>Effectively coached guests with mobility issues</li>
+                            </ul>
+                        </div>
+
+                        <!-- Qamaria -->
+                        <div class="service" id="qamaria">
+                            <p class="title">Qamaria Yemeni Coffee <span>|</span> Barista</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Fareena Shujauddin - 585 755 0256 <span>|</span> <a target="_blank" href="mailto:qamariadurham@gmail.com">qamariadurham@gmail.com</a></li>
+                            </ul>
+                            <p class="text-gray-400">December 2025 - March 2026</p>
+                            <ul>
+                                <li>Memorized and prepared both cold and iced espresso drinks, as well as specialty, stovetop Yemeni drinks</li>
+                                <li>Remedied and prevented tech issues with shop TVs, POS systems, printers, and pagers</li>
+                                <li>Restocked prep items and ingredients to ensure baristas were able to continue making drinks during rushes</li>
+                                <li>Compiled, organized, and presented drinks and pastries for different orders efficiently and accurately</li>
+                            </ul>
+                        </div>
+
+                        <!-- CITAP -->
+                        <div class="tech" id="citap">
+                            <p class="title">Center for Information, Technology, and Public Life <span>|</span> Communications Assistant - Part Time</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Felicity Gancedo - 919 618 7174 <span>|</span> <a target="_blank" href="mailto:feliganc@unc.edu">feliganc@unc.edu</a></li>
+                            </ul>
+                            <p class="text-gray-400">November 2022 - May 2024</p>
+                            <ul>
+                                <li>Used Beaver Builder to migrate/adapt Wordpress based web content</li>
+                                <li>Created graphics using Photoshop and Canva</li>
+                                <li>Coordinated with team members remotely through Trello and MS Planner</li>
+                                <li>Assisted in managing academic talks and symposia, both livestreams and in person</li>
+                            </ul>
+                        </div>
+
+                        <!-- Apogee -->
+                        <div class="outdoors" id="apogee">
+                            <p class="title">Apogee Adventures <span>|</span> Northeast Support Staff - Seasonal</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Will Robertson - 651 276 7636 <span>|</span> <a target="_blank" href="mailto:will@apogeeadventures.com">will@apogeeadventures.com</a></li>
+                            </ul>
+                            <p class="text-gray-400">June 2023 - August 2023</p>
+                            <ul>
+                                <li>Composed blog posts on trip activities to keep parents updated</li>
+                                <li>Independently identified and resolved office computing bottlenecks</li>
+                                <li>Facilitated backcountry and cycling trips for children ages 11-15</li>
+                                <li>Supported and supervised children experiencing specific difficulties on trip</li>
+                            </ul>
+                        </div>
+
+                        <!-- DBL -->
+                        <div class="tech" id="dbl">
+                            <p class="title">Deepest Beliefs Lab <span>|</span> Research Assistant - Part Time</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Curtis Puryear - 270 723 0361 <span>|</span> <a target="_blank" href="mailto:cwpuryear12@gmail.com">cwpuryear12@gmail.com</a></li>
+                            </ul>
+                            <p class="text-gray-400">July 2021 - June 2023</p>
+                            <ul>
+                                <li>Procured and synthesized literature</li>
+                                <li>Researched, obtained, and collated data in excel</li>
+                                <li>Composed queries and retrieved Reddit data with PushShift.io</li>
+                                <li>Led a group to learn and implement Python, Pandas, and NumPy to solve data problems</li>
+                                <li>Presented <a href="resources/aps-poster.png" target="_blank">research</a> in a poster session at APS 2023</li>
+                            </ul>
+                        </div>
+
+                        <!-- UNC ITS -->
+                        <div class="tech" id="uncits">
+                            <p class="title">University of North Carolina - CH <span>|</span> Technology Support Technician</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Patrick Kiernan - 919 923 5309 <span>|</span> <a target="_blank" href="mailto:kiernan@unc.edu">kiernan@unc.edu</a></li>
+                            </ul>
+                            <p class="text-gray-400">July 2018 - July 2021</p>
+                            <ul>
+                                <li>Oversaw student employees</li>
+                                <li>Troubleshot account issues with Office 365</li>
+                                <li>Provided chat support to as many as three clients concurrently</li>
+                                <li>Wrote client-facing troubleshooting documentation</li>
+                                <li>Assisted in reworking a walk-in structured organization to accommodate Covid-19 concerns</li>
+                                <li>Troubleshot and resolved both student and teacher issues in Sakai</li>
+                            </ul>
+                        </div>
+
+                        <!-- Computer Cellar -->
+                        <div class="tech" id="cellar">
+                            <p class="title">The Computer Cellar <span>|</span> Repair Technician</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Gabriel Caviness - 336 417 7408 <span>|</span> <a target="_blank" href="mailto:gabrielcaviness@gmail.com">gabrielcaviness@gmail.com</a></li>
+                            </ul>
+                            <p class="text-gray-400">October 2015 - July 2018</p>
+                            <ul>
+                                <li>Frequently interacted with customers by email, phone, and walk-in traffic</li>
+                                <li>Diagnosed and replaced motherboard components, such as ports, ICs, and capacitors</li>
+                                <li>Chiefly responsible for data recoveries from healthy, failing, and/or nearly destroyed storage media</li>
+                                <li>Installed networking infrastructure in a business setting</li>
+                                <li>Diagnosed and repaired issues in Linux, Windows, MacOS, as well as Outlook, Quickbooks, Office 365, and many other applications</li>
+                            </ul>
+                        </div>
+
+                        <!-- Show Older Button -->
+                        <div>
+                            <p class="text-gray-400 text-xl show" id="showHideJobs"><span class="underline title" id="showHideText">Show</span> employment older than 5 years</p> 
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Accomplishments -->
+                <div id="accomplishments" class="[&_ul]:text-gray-400 [&_ul]:list-disc [&_ul]:ml-4">
+                    <p class="text-white text-2xl text-center mb-2 mt-4">Accomplishments</p>
+                    <ul>
+                        <li class="tech">Independently learned to diagnose and repair motherboard level issues on Apple laptops using freely available resources and basic tools</li>
+                        <li class="tech">Designed and curated a <a href="https://bullcityfairtrade.omeka.net/" target="_blank">digital archive</a> for Bull City Fair Trade to preserve and display 30 years of history</li>
+                        <li class="tech">This website was built from scratch using HTML, TailwindCSS, and JQuery</li>
+                        <li class="tech">Designed a robust database using SQLite to track my personal climbing with <a href="/climbing" target="_blank">basic data visualization</a></li>
+                        <li class="outdoors">Designed curricula and taught introductory aerial silks to college students at the University of North Carolina - Chapel Hill</li>
+                        <li class="outdoors">Led an exploratory climbing expedition to establish traditional style multipitch climbs ground up - <a href="/resources/nolichucky-guidebook.pdf" target="_blank">Guidebook</a></li>
+                        <li>Assisted in training a racing team of 15 sled dogs, at times in adverse conditions</li>
+                        <li class="tech">Co-authored a <a href="https://doi.org/10.1093/pnasnexus/pgae345" target="_blank">journal article</a> published in PNAS Nexus</li>
+                        <li>Duolingo Portuguese score of 65 (CEFR level B1) <span class="text-emerald-300" id="cefrbutton">See More</span></li>
+                            <li class="ml-6 hidden" id="cefrcontent">"Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc. Can deal with most situations likely to arise whilst travelling in an area where the language is spoken.  Can produce simple connected text on topics which are familiar or of personal interest. Can describe experiences and events, dreams, hopes & ambitions and briefly give reasons and explanations for opinions and plans."<br>- Common European Framework of Reference for Languages (CEFR)</li>
+                        <li>Designed an inventory management spreadsheet for tracking bulk purchases and individual sales to monitor profits holistically and per purchase batch</li>
+                        <li>Designed and created an open source <a href="https://github.com/achiquit/climbing-journal" target="_blank">data management system</a> for recording and interpreting personal rock climbing statistics using Python and SQLite</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- Education -->
+                <div id="education" class="[&_.title]:text-emerald-300 [&_.title]:text-xl [&_ul]:text-gray-400 [&_ul]:list-disc [&_ul]:ml-4">
+                    <p class="text-white text-2xl text-center mb-2 mt-4">Education</p>
+
+                    <p class="title">University of Denver</p>
+                    <p class="text-gray-400">Expected to Graduate June, 2028</p>
+                    <ul>
+                        <li>M.A. - International Disaster Psychology: Trauma & Global Mental Health</li>
+                        <li>Program Credentials:</li>
+                        <ul>
+                            <li>APA-Accredited Master's Program in Health Serice Psychology</li>
+                            <li>Colorado Board-Recognized CACREP-Equivalent Program</li>
+                        </ul>
+                    </ul>
+
+                    <p class="title mt-4">University of North Carolina at Chapel Hill</p>
+                    <p class="text-gray-400">Graduated, May 2024 - 3.76 GPA</p>
+                    <ul>
+                        <li>B.S. - Information Science Major</li>
+                        <li>B.A. - Psychology Major</li>
+                        <li><a href="resources/unc-transcript.pdf" target="_blank">Transcript</a></li>
+                    </ul>
+
+                    <p class="title mt-4">Durham Technical Community College</p>
+                    <p class="text-gray-400">Graduated July, 2020 - 3.72 GPA</p>
+                    <ul>
+                        <li>Associates in Arts</li>
+                        <li><a href="/resources/transcripts/DTCC.pdf" target="_blank">Transcript</a></li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- Certs -->
+                <div id="certifications" class="[&_ul]:text-gray-400 [&_ul]:list-disc [&_ul]:ml-4">
+                    <p class="text-white text-2xl text-center mb-2 mt-4">Certifications</p>
+                    <ul class="[&_a]:text-emerald-300">
+                        <li class="outdoors" id="spi"><a href="/resources/certs/AMGA-SPI.pdf" target="_blank">American Mountain Guides Association Certified Single Pitch Instructor</a></li>
+                        <li class="outdoors" id="spg"><a href="/resources/certs/PCGI-SPG.pdf" target="_blank">Professional Climbing Guides Institute Certified Single Pitch Guide</a></li>
+                        <li class="outdoors" id="mpg"><a href="/resources/certs/PCGI-MPG.pdf" target="_blank">Professional Climbing Guides Institute Certified Multi Pitch Guide</a></li>
+                        <li id="ymhfr"><a href="/resources/certs/YMHFA.pdf" target="_blank">Certified Youth Mental Health First Responder</a></li>
+                        <li id="cpr"><a href="/resources/certs/CPR.pdf" target="_blank">Adult First Aid/CPR/AED</a></li>
+                        <li id="hipaa"><a href="/resources/certs/HIPAACertification.pdf" target="_blank">CITI - HIPAA Basics for Healthcare Professionals</a></li>
+                        <li id="human-subjects"><a href="/resources/certs/CITI-Human-Subjects-Basic.pdf" target="_blank">CITI - Human Subjects Research, Basic Course</a></li>
+                        <li><a href="/resources/certs/PFA.pdf" target="_blank">NCTSN - Psychological First Aid</a></li>
+                        <li><a href="/resources/certs/FEMA-IS-100c.pdf" target="_blank">FEMA - IS-100.c: Introduction to the Incident Command System</a></li>
+                        <li><a href="/resources/certs/FEMA-IS-700b.pdf" target="_blank">FEMA - IS-700.b: Introduction to the National Incident Management System</a></li>
+                        <li><a href="/resources/certs/FEMA-IS-800d.pdf" target="_blank">FEMA - IS-800.d: Introduction to the National Response Framework</a></li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <!-- Testimonials -->
+                <div id="testimonials" class="[&_.title]:text-xl [&_.title]:text-emerald-300 [&_ul]:text-gray-400 [&_ul]:ml-4 [&_span]:text-emerald-300 [&_li]:text-justify [&_li]:px-10">
+                    <p class="text-white text-2xl text-center mb-2 mt-4">Customer Testimonials</p>
+
+                    <div class="outdoors">
+                    <p class="title"><a href="https://maps.app.goo.gl/XieNvG4M2rBHcfvk8" target="_blank">5-Star Google Review of Seneca Rocks Mountain Guides</a></p>
+                        <ul>
+                            <li>“My husband and I had a wonderful experience climbing at Seneca Rocks thanks to our guide Andre! . . . We had such a great time and it’s thanks to Andre’s excellent planning of each day; he considered our interests and abilities, and chose routes that were challenging yet enjoyable for us.”<br>- Kristen K.</li>
+                        </ul>
+                    </div>
+
+                    <div class="outdoors mt-4">
+                    <p class="title"><a href="https://maps.app.goo.gl/LgeFKS3UZFjMLDWu8" target="_blank">5-Star Google Review of NRocks Outdoor Adventures</a></p>
+                        <ul>
+                            <li>“This was a fantastic experience. Andre was an incredible guide and made the adventure even more fun!”<br>- Julie C.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech mt-4">
+                    <p class="title">5-Star Anonymous Survey at The University of North Carolina at Chapel Hill</p>
+                        <ul>
+                            <li>“Quick, excellent service- good listener as well as fixer.”</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech mt-4">
+                    <p class="title"><a href="https://www.yelp.com/biz/the-computer-cellar-durham?hrid=0_PR19RF7OVKR1Olt9LOmQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">5-Star Yelp Review of The Computer Cellar</a></p>
+                        <ul>
+                            <li>“They went above and beyond, backing the items up while I went and bought a new hard drive and answered other computer questions I had along the way. Andre saved our Saturday and what felt like our lives in the moment. I would recommend any friend or family member.”<br>- Mallory M.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <a id="to-top-button" class="transition transition-discrete duration-300 hidden" href="#top"><i title="Go To Top" class=" fa-solid fa-circle-up text-emerald-300 text-shadow-xl/50 text-5xl fixed z-55 bottom-8 right-8"></i></a>
+        </main>
+
+        <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="resume.js"></script>
+        
+    </body>
+</html>
