@@ -17,9 +17,9 @@ git push
 echo ""
 echo ""
 
-echo "=+=+=+=+=+=+=+=--- Updating server ---=+=+=+=+=+=+=+="
-read -s -p "Enter Server Password Here: " password
-echo "$password" | tailscale ssh andre@ubuntu "sudo -S ./update.sh"
+# echo "=+=+=+=+=+=+=+=--- Updating server ---=+=+=+=+=+=+=+="
+# read -s -p "Enter Server Password Here: " password
+# echo "$password" | tailscale ssh andre@ubuntu "sudo -S ./update.sh"
 
-echo ""
-echo ""
+# echo ""
+# echo ""
