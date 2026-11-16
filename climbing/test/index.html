@@ -38,33 +38,35 @@ https://github.com/derekeder/csv-to-html-table?tab=readme-ov-file -->
         <main id="main" class="bg-gray-950 container mx-auto px-4 py-6 transition-all duration-600">
             <p class="text-white text-6xl text-center pb-4">My Climbing</p>
 
-            <div class="flex justify-center [&_.ticker-title]:text-gray-400 [&_.ticker-title]:text-lg [&_.ticker-title]:text-center">
-                <p class="text-lg text-gray-400">I've climbed</p>
-                <div class="ticker-wrap">
-                    <div class="ticker">
+            <div class="hidden justify-center [&_.ticker-title]:text-gray-400 [&_.ticker-title]:text-lg [&_.ticker-title]:text-center lg:flex lg:flex-col">
+                <p class="text-lg text-gray-400 text-center">In the <span id="climbing-time"></span> since my first outdoor climbing trip, I've climbed...</p>
+                <div class="flex justify-center">
+                    <div class="ticker-wrap">
+                        <div class="ticker [&_li]:text-right">
 
-                        <ul>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">168,977 feet</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">51,505 meters</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">156 Eiffel Towers</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">289,691 bananas</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">28,163 fathoms</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">112,651 cubits</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">28,543 Andres</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">56 El Capitans</span></a></li>
-                        <li class='ticker-item'><a href="#"><span class="ticker-title">32 miles</span></a></li>
-                        </ul>
+                            <ul>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">181,172 feet</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">55,222 meters</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">167 Eiffel Towers</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">310,598 bananas</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">30,195 fathoms</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">120,781 cubits</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">30,603 Andres</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">60 El Capitans</span></a></li>
+                            <li class='ticker-item'><a href="#"><span class="ticker-title">34 miles</span></a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <p class="text-lg text-gray-400">, 2,071 pitches, across 745 total climbs in 156 crags with 123 partners!</p>
                 </div>
-                <p class="text-lg text-gray-400">, 1,967 pitches, across 708 total climbs in 147 crags with 118 partners!</p>
             </div>
 
-            <p class="text-lg text-gray-400 pb-8 text-center">If you're one of those 118 partners, let's rope up again! If you're not, we should climb sometime :)</p>
+            <p class="text-lg text-gray-400 pb-8 text-center hidden text-center lg:block">If you're one of those 123 partners, let's rope up again! If you're not, we should climb sometime :)</p>
 
             <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
 
                 <!-- Overview Stats -->
-                <div class="lg:col-span-3 h-60">
+                <div class="lg:col-span-3 h-105 lg:h-60">
 
                     <!-- CSV to Table -->
                     <iframe style="border-style: none;" src="/climbing/all-time-stats.html" class="w-full h-full rounded-xl overflow-x-scroll lg:hidden"></iframe>
@@ -131,13 +133,22 @@ https://github.com/derekeder/csv-to-html-table?tab=readme-ov-file -->
                     <iframe style="border-style: none;" src="/climbing/top-climbs.html" class="w-full h-full rounded-xl"></iframe>
                 </div>
 
+                <div class="lg:col-span-2">
+                    <form id="ticksForm" class="text-white">
+                        <input type="file" id ="ticksInput" accept=".csv">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <textarea name="" id="ticksResult" cols="30" rows="10" class="text-white"></textarea>
+                </div>
+
                 <!-- Comments -->
-                <div class="lg:col-span-3">
+                <div class="lg:col-span-1">
                     <p class="text-4xl text-white text-center">Comments</p>
                     <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
                     <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
                     <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24umYrIW59177aFJXDLotxK."+"&opts=16798&num=10&ts=1743261284031");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
                 </div>
+
             </div>
             
         </main>
@@ -147,6 +158,7 @@ https://github.com/derekeder/csv-to-html-table?tab=readme-ov-file -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="/js/script.js"></script>
     <script type="module" src="/climbing/js/custom.js"></script>
+    <script type="module" src="/climbing/js/compare_ticks.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
