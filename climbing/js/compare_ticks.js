@@ -5,7 +5,7 @@ const textArea = document.querySelector("#ticksResult");
 let myClimbs = [];
 let theirTicks = [];
 
-loadCsvAsArray("/climbing/test-top-climbs.csv")
+loadCsvAsArray("/climbing/data/top-climbs.csv")
   .then((ticks) => {
     myClimbs = ticks;
   })
@@ -20,8 +20,17 @@ form?.addEventListener("submit", function (e) {
 
   reader.onload = function (e) {
     theirTicks = csvToArr(e.target.result, ",");
-    textArea.value = JSON.stringify(theirTicks, null, 4);
-    compClimbs(myClimbs, theirTicks);
+    const sharedClimbs = compClimbs(myClimbs, theirTicks);
+    textArea.replaceChildren();
+    sharedClimbs.forEach((climb, index) => {
+      if (index > 0) textArea.append(document.createElement("br"));
+      const link = document.createElement("a");
+      link.href = climb.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = climb.name;
+      textArea.append(link);
+    });
   };
 
   reader.readAsText(file);
@@ -46,12 +55,19 @@ function csvToArr(stringVal, splitter) {
 }
 
 function compClimbs(myClimbs, theirClimbs) {
+  const sharedClimbs = [];
   theirLoop: for (let iThem = 0; iThem < theirClimbs.length; iThem++) {
     myLoop: for (let iMe = 0; iMe < myClimbs.length; iMe++) {
       if (theirClimbs[iThem]["URL"] === myClimbs[iMe]["MP URL"]) {
         console.log("We've both climbed ", theirClimbs[iThem]["Route"]);
+        sharedClimbs.push({
+          name: myClimbs[iMe]["Climb"],
+          url: myClimbs[iMe]["MP URL"],
+        });
         break myLoop;
       }
     }
   }
+  console.log(sharedClimbs);
+  return sharedClimbs;
 }
