@@ -59,7 +59,6 @@ function compClimbs(myClimbs, theirClimbs) {
   theirLoop: for (let iThem = 0; iThem < theirClimbs.length; iThem++) {
     myLoop: for (let iMe = 0; iMe < myClimbs.length; iMe++) {
       if (theirClimbs[iThem]["URL"] === myClimbs[iMe]["MP URL"]) {
-        console.log("We've both climbed ", theirClimbs[iThem]["Route"]);
         sharedClimbs.push({
           name: myClimbs[iMe]["Climb"],
           url: myClimbs[iMe]["MP URL"],
@@ -68,6 +67,14 @@ function compClimbs(myClimbs, theirClimbs) {
       }
     }
   }
-  console.log(sharedClimbs);
+  cleanLoop: for (let i = 0; i < sharedClimbs.length; i++) {
+    cleanLoop2: for (let i2 = 0; i2 < sharedClimbs.length; i2++) {
+      if (sharedClimbs[i]["name"] == sharedClimbs[i2]["name"]) {
+        if (i != i2) {
+          sharedClimbs.splice(i, 1);
+        }
+      }
+    }
+  }
   return sharedClimbs;
 }
