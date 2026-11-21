@@ -5,6 +5,7 @@ echo ""
 
 echo "=+=+=+=+=+=+=+=--- Updating Sitemap ---=+=+=+=+=+=+=+="
 python3 sitemap-gen.py
+python3 resume/resources/timeline-gen.py
 
 echo ""
 echo ""

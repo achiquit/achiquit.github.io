@@ -28,15 +28,21 @@
     </head>
     <body class="bg-gray-950">
 
-        <div id="header" class="sticky top-0 z-70 lg:relative"></div>
+        <div id="header" class="sticky top-0 z-70"></div>
 
-        <div class="bg-gray-950 fixed top-0 h-screen w-screen overflow-y-auto z-65 hidden lg:w-3/8" id="timeline">
+        <!-- <div class="bg-gray-950 fixed top-0 h-screen w-screen overflow-y-auto z-65 hidden lg:w-3/8" id="timeline">
             <i class="text-white text-4xl fa-solid fa-x fixed top-20 pl-4 timeline-btn"></i>
             <img src="/resume/resources/timeline.png" class="mx-auto">
+        </div> -->
+
+        <div class="h-full w-screen overflow-y-auto fixed overflow-y-auto z-65 hidden backdrop-blur-sm timeline-btn" id="timeline">
+            <i class="text-white text-4xl fa-solid fa-x fixed top-20 pl-4 z-67"></i>
+            <iframe style="border-style: none;" src="/resume/resources/timeline-gantt.html" class="w-full h-150 relative top-20 z-66"></iframe>
         </div>
 
         <main id="main" class="bg-gray-950 container mx-auto px-4 py-6 transition-all duration-600">
         <a class="anchor" id="top"></a>
+
         <div class="lg:flex lg:flex-row">
 
             <!-- Nav -->
@@ -113,6 +119,22 @@
                                 <li>Assisted in staff high angle emergency rescue training</li>
                                 <li>Coached and supported novice climbers through mild to intense fear and anxiety</li>
                                 <li>Effectively coached guests with mobility issues</li>
+                            </ul>
+                        </div>
+
+                        <!-- Triangle Rock Club -->
+                        <div class="outdoors" id="trc">
+                            <p class="title">Triangle Rock Club <span>|</span> Assistant Coach</p>
+                            <p class="text-gray-400 reference hover:underline"><span><i class="text-emerald-300 fa-solid fa-caret-down transition duration-500 mr-2 ref"></i></span>Reference</p>
+                            <ul class="hidden">
+                                <li class="ml-1 ref">Carter Smith -  828 406 7010<span>|</span> <a target="_blank" href="mailto:carter@trianglerockclub.com">carter@trianglerockclub.com</a></li>
+                            </ul>
+                            <p class="text-gray-400">February 2026 - April 2026</p>
+                            <ul>
+                                <li>Supported and advised young athletes during practices and competitions</li>
+                                <li>Guided athletes through drills and organized practice schedules</li>
+                                <li>Fostered relationships with athletes and parents</li>
+                                <li>Managed team gear to maintain safety, quality, and organization</li>
                             </ul>
                         </div>
 

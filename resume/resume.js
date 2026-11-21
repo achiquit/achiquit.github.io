@@ -42,6 +42,7 @@ $(".timeline-btn").click(function(){
 var jobItems = [
     ["srmg", new Date("July 31, 2026 00:00:00").getTime()],
     ["nrocks", new Date("July 31, 2026 00:00:00").getTime()],
+    ["trc", new Date("Apr 30, 2026 00:00:00").getTime()],
     ["qamaria", new Date("Mar 31, 2026 00:00:00").getTime()],
     ["citap", new Date("May 31, 2024 00:00:00").getTime()],
     ["apogee", new Date("Aug 31, 2023 00:00:00").getTime()],
