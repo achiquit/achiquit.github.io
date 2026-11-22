@@ -3,7 +3,7 @@
 echo ""
 echo ""
 
-echo "=+=+=+=+=+=+=+=--- Updating Sitemap ---=+=+=+=+=+=+=+="
+echo "=+=+=+=+=+=+=+=--- Running Python Scripts ---=+=+=+=+=+=+=+="
 python3 sitemap-gen.py
 python3 resume/resources/timeline-gen.py
 
