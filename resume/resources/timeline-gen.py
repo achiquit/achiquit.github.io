@@ -12,7 +12,7 @@ dark_blue = '#26007A'
 dark_yellow = '#7A1A00'
 today = datetime.today()
 today_str = today.strftime('%Y-%m-%d')
-graph_start = today - relativedelta(years=5)
+graph_start = today - relativedelta(years=5, days=1)
 
 jobs = [
     dict(Organization="TRC", Position="Assistant Coach", Start='2026-02-01', Finish='2026-05-01', Type="Work"),
@@ -70,16 +70,20 @@ fig = px.timeline(
 fig.update_layout(
     plot_bgcolor=bg_black,
     paper_bgcolor=bg_black,
-    margin=dict(l=40, r=40, t=40, b=40),
+    showlegend=False,
     legend=dict(
         orientation="h",
         yanchor="bottom",
         y=1.3,
-        xanchor="right",
+        xanchor="center",
         x=.1,
         entrywidth=70,
         title=dict(
-            text=""
+            text="",
+            side="top"
+        ),
+        font=dict(
+            color='white'
         )
     )
 )
@@ -87,8 +91,10 @@ fig.update_traces(marker_line_width=0)
 fig.update_yaxes(
     title=None,
     gridcolor=dark_emerald,
-    tickfont=dict(family='Arial', color='white', size=12),
-    ticklabelstandoff=6,
+    # tickfont=dict(family='Arial', color='white', size=12),
+    # ticklabelstandoff=6,
+    showticklabels=False,
+    visible=False
     # tickangle=300
 )
 fig.update_xaxes(
@@ -123,4 +129,5 @@ for note in annots:
     )
 
 config = {'displayModeBar': False}
+fig.show(config=config)
 pio.write_html(fig, f'resume/resources/timeline-gantt.html', include_plotlyjs='cdn', config=config)
