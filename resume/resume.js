@@ -52,7 +52,6 @@ var jobItems = [
 ]
 
 function hideFiveYrs(init, items) {
-    console.log(init);
     let curDate = new Date();
     let fiveYrs = new Date(curDate);
     fiveYrs.setFullYear(fiveYrs.getFullYear() - 5);
@@ -63,7 +62,6 @@ function hideFiveYrs(init, items) {
         var exp = items[i][1]
         if (fiveYrs > exp) {
             if (init == 0) {
-                console.log("Attempting to hide item " + items[i][0]);
                 $(item).slideToggle();
             } else {
                 item.classList.add("hidden");
@@ -76,7 +74,6 @@ hideFiveYrs(1, jobItems);
 
 $("#showHideJobs").click(function () {
     if ($(this).hasClass("show")) {
-        console.log("Showing everything");
         let span = document.getElementById("showHideText");
         span.textContent = "Hide";
         $(this).removeClass("show");
@@ -90,7 +87,6 @@ $("#showHideJobs").click(function () {
         };
     } else {
         if ($(this).hasClass("hide")) {
-            console.log("Hiding everything");
             let span = document.getElementById("showHideText");
             span.textContent = "Show";
             $(this).removeClass("hide");
@@ -123,3 +119,43 @@ for (let i = 0; i < certs.length; i++) {
         cert.classList.add("hidden", "expired");
     }
 };
+
+// ######## View / Hide Accomplishment Categories #############
+var accomplishmentCategories = [
+    ["accomplishmentAllBtn", null],
+    ["accomplishmentTechBtn", "tech"],
+    ["accomplishmentResearchBtn", "research"],
+    ["accomplishmentLeadershipBtn", "leadership"],
+    ["accomplishmentProjectBtn", "project"]
+];
+
+$(".accomplishmentBtn").click(function () {
+    var selectedCategory = accomplishmentCategories.find(function (category) {
+        return category[0] === this.id;
+    }, this);
+
+    if (!selectedCategory) {
+        return;
+    }
+
+    $("#accomplishments .accomplishmentItem").each(function () {
+        var item = $(this);
+        var shouldHide = selectedCategory[1] !== null && !this.classList.contains(selectedCategory[1]);
+
+        item.stop(true, true);
+        if (shouldHide && !item.hasClass("hidden")) {
+            item.slideUp("medium", function () {
+                $(this).addClass("hidden");
+            });
+        } else if (!shouldHide && item.hasClass("hidden")) {
+            item.removeClass("hidden").hide().slideDown("medium");
+        }
+    });
+
+    $(".accomplishmentBtn")
+        .removeClass("text-emerald-300")
+        .addClass("text-white");
+    $(this)
+        .removeClass("text-white")
+        .addClass("text-emerald-300");
+});
