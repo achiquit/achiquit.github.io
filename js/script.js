@@ -1,3 +1,5 @@
+
+
 // Load the header HTML before cloning the site menu
 $("#header").load("/header.html", function() {
     // Hamburger menu to X animation
@@ -25,28 +27,88 @@ $("#header").load("/header.html", function() {
         }
     });
 
-    //Nested dropdown function - Mobile function could be tweaked to have nested dropdowns hide when the parent dropdown is hidden also
-    if($(window).width() < 1024) {
-        $(".has-children").click(function () {
-            $(this).parent().parent().children('ul').slideToggle('medium');
-        });
-    } else {
-        // First try, but very hard to use. Next iteration below.
-        // $(".dropdown-item").hover(function () {
-        //     $(this).children('ul').slideToggle('medium');
-        // });
+    // Nested dropdowns - NESTED DROPDOWN CODE MADE WITH AI
+    const hoverNav = window.matchMedia("(min-width: 1024px) and (hover: hover)");
 
-        // var subMenu = $('li.dropdown-item > ul > li.dropdown-item');
-
-        // subMenu.hover(function () {
-        //     $(this).find("ul.dropdown-item").slideToggle(200);
-        // });
-
-        // Next iteration here!
-        $(".has-children").click(function () {
-            $(this).parent().parent().children('ul').slideToggle('medium');
-        });
+    function getDropdownParts(item) {
+        return {
+            button: item.querySelector(":scope > div > .has-children"),
+            dropdown: item.querySelector(":scope > .dropdown")
+        };
     }
+
+    function closeDropdown(item) {
+        const { button, dropdown } = getDropdownParts(item);
+        if (!button || !dropdown) return;
+
+        Array.from(dropdown.children)
+            .filter(child => child.classList.contains("dropdown-item"))
+            .forEach(closeDropdown);
+
+        button.setAttribute("aria-expanded", "false");
+        const menu = $(dropdown).stop(true, true);
+        if (!menu.hasClass("hidden")) {
+            menu.slideUp("medium", function () {
+                this.classList.add("hidden");
+            });
+        }
+    }
+
+    function openDropdown(item) {
+        const { button, dropdown } = getDropdownParts(item);
+        if (!button || !dropdown) return;
+
+        if (item.parentElement === topLevelMenu) {
+            Array.from(item.parentElement.children)
+                .filter(sibling => sibling !== item && sibling.classList.contains("dropdown-item"))
+                .forEach(closeDropdown);
+        }
+
+        const menu = $(dropdown).stop(true, true);
+        if (menu.hasClass("hidden")) {
+            menu.removeClass("hidden").hide();
+        }
+        menu.slideDown("medium");
+        button.setAttribute("aria-expanded", "true");
+    }
+
+    const topLevelMenu = document.querySelector("#navMenu > ul");
+    document.querySelectorAll("#navMenu .dropdown-item").forEach(item => {
+        const { button, dropdown } = getDropdownParts(item);
+        if (!button || !dropdown) return;
+
+        const isTopLevel = item.parentElement === topLevelMenu;
+        button.type = "button";
+        button.setAttribute("aria-expanded", "false");
+        button.setAttribute("aria-haspopup", "true");
+
+        if (isTopLevel) {
+            item.addEventListener("mouseenter", () => {
+                if (hoverNav.matches) openDropdown(item);
+            });
+            item.addEventListener("mouseleave", () => {
+                if (hoverNav.matches) closeDropdown(item);
+            });
+        }
+
+        item.addEventListener("focusin", event => {
+            if (event.target.matches(":focus-visible")) openDropdown(item);
+        });
+        if (isTopLevel) {
+            item.addEventListener("focusout", event => {
+                if (!item.contains(event.relatedTarget) && !(hoverNav.matches && item.matches(":hover"))) {
+                    closeDropdown(item);
+                }
+            });
+        }
+        button.addEventListener("click", event => {
+            if ((isTopLevel && hoverNav.matches) || event.detail === 0 || dropdown.classList.contains("hidden")) {
+                openDropdown(item);
+            } else {
+                closeDropdown(item);
+            }
+        });
+    });
 });
 
 // Load the footer HTML

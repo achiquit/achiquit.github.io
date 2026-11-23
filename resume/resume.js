@@ -120,7 +120,7 @@ for (let i = 0; i < certs.length; i++) {
     }
 };
 
-// ######## View / Hide Accomplishment Categories #############
+// ######## View / Hide Accomplishment Categories - MADE WITH AI #############
 var accomplishmentCategories = [
     ["accomplishmentAllBtn", null],
     ["accomplishmentTechBtn", "tech"],
