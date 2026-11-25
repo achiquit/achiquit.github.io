@@ -129,5 +129,4 @@ for note in annots:
     )
 
 config = {'displayModeBar': False}
-fig.show(config=config)
 pio.write_html(fig, f'resume/resources/timeline-gantt.html', include_plotlyjs='cdn', config=config)
