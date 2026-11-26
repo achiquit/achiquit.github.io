@@ -1,8 +1,8 @@
 // COUNTDOWN CODE
 
 // Set the date we're counting down to
-var countDownDateStart = new Date("Aug 2, 2026 00:00:00").getTime();
-var countDownDateEnd = new Date("Aug 17, 2026 00:00:00").getTime();
+var nextAdventureStart = new Date("Jun 12, 2027 00:00:00").getTime();
+var nextAdventureEnd = new Date("Sep 11, 2027 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -11,8 +11,8 @@ var x = setInterval(function() {
     var now = new Date().getTime();
 
     // Find the distance between now and the count down date
-    var distanceStart = countDownDateStart - now;
-    var distanceEnd = countDownDateEnd - now;
+    var distanceStart = nextAdventureStart - now;
+    var distanceEnd = nextAdventureEnd - now;
 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distanceStart / (1000 * 60 * 60 * 24));

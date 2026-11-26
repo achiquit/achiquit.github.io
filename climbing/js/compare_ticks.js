@@ -1,3 +1,5 @@
+// This tool was made with the help of AI
+
 const form = document.querySelector("#ticksForm");
 const csvFileInput = document.querySelector("#ticksInput");
 const textArea = document.querySelector("#ticksResult");
@@ -13,7 +15,7 @@ loadCsvAsArray("/climbing/data/top-climbs.csv")
     console.error("Failed to load the site's climbing ticks:", error);
   });
 
-form?.addEventListener("submit", function (e) {
+form?.addEventListener("submit", async function (e) {
   e.preventDefault();
   const file = csvFileInput.files[0];
   const reader = new FileReader();
