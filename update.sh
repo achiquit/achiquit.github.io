@@ -1,10 +1,10 @@
 # !/bin/sh
+source ../ticks-db/.venv/bin/activate
 
 echo ""
 echo ""
 
 echo "=+=+=+=+=+=+=+=--- Running Python Scripts ---=+=+=+=+=+=+=+="
-source ../ticks-db/.venv/bin/activate
 python3 sitemap-gen.py
 python3 resume/resources/timeline-gen.py
 
